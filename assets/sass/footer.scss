@@ -1,0 +1,96 @@
+$primary-color: #2aacc8;
+
+.footer {
+  background-color: #e8ebf1;
+  &-wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px 0 15px;
+  }
+  &-top {
+    display: flex;
+    justify-content: space-between;
+
+    &__col {
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    &__col:nth-child(2) {
+      margin-left: 5rem;
+      margin-right: -4rem;
+    }
+    &__heading {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      &-text {
+        margin-top: 28px;
+        line-height: 2rem;
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-transform: none;
+      }
+    }
+    &__list {
+      list-style: none;
+      text-transform: none;
+      font-weight: 300;
+    }
+    &__item {
+      padding-top: 14px;
+      &-link {
+        color: #000;
+      }
+      &-link:hover {
+        text-decoration: none;
+        color: $primary-color;
+      }
+    }
+    &__company {
+      &-name {
+        margin-top: 25px;
+        text-transform: none;
+      }
+      &-location,
+      &-phone,
+      &-fax {
+        text-transform: none;
+        font-weight: 300;
+      }
+      &-phone {
+        margin-top: 20px;
+      }
+    }
+    &__socials {
+      margin-top: 20px;
+      &-link:hover {
+        text-decoration: none;
+      }
+      &-img {
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &-bot {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    &__text {
+      font-size: 1.3rem;
+    }
+    &__logo-link:hover {
+      text-decoration: none;
+    }
+    &__logo-text {
+      color: #000;
+      font-weight: 700;
+      font-size: 5rem;
+    }
+    &__logo-text2 {
+      color: $primary-color;
+      font-weight: 300;
+      font-size: 5rem;
+    }
+  }
+}

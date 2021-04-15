@@ -1,0 +1,269 @@
+doctype html
+html(lang="en")
+
+    head
+        meta(chaset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title BisLite
+
+        link(rel="preconnect" href="https://fonts.gstatic.com")
+        link(href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet")
+
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js")
+        script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+
+        link(rel="stylesheet" href="./assets/fonts/fontawesome-5.12.0/css/all.min.css")
+        link(rel="stylesheet" href="./assets/css/main.css")
+        link(rel="stylesheet" href="./assets/css/header.css")
+        link(rel="stylesheet" href="./assets/css/slider.css")
+        link(rel="stylesheet" href="./assets/css/about.css")
+        link(rel="stylesheet" href="./assets/css/section.css")
+        link(rel="stylesheet" href="./assets/css/footer.css")
+        //- link(rel="stylesheet" href="./assets/css/responsive.css")
+    body
+        #app
+            header.header
+                div.header__wrap
+                    a.header__logo(href="index.html")
+                            span.logo__text Bis
+                            span.logo__text2 Lite
+                    nav.header__menu
+                        ul.header__menu-list 
+                            li.header__menu-item.header__menu-item--active
+                                a.header__menu-link(href="#") Home
+                            li.header__menu-item
+                                a.header__menu-link(href="#") About Us
+                            //- span.header__menu-line
+                            li.header__menu-item
+                                a.header__menu-link(href="#") Services
+                                    i.fas.fa-angle-down.header__menu-icon
+                                ul.header__dropdown-list 
+                                    li.header__dropdown-item 
+                                        a.header__dropdown-link(href="#") Web Design
+                                    li.header__dropdown-item 
+                                        a.header__dropdown-link(href="#") Wordpress Design
+                                    li.header__dropdown-item 
+                                        a.header__dropdown-link(href="#") Mobile App Development
+                                    li.header__dropdown-item 
+                                        a.header__dropdown-link(href="#") Internet Marketing
+                                    li.header__dropdown-item 
+                                        a.header__dropdown-link(href="#") Social Media Management
+                            li.header__menu-item
+                                a.header__menu-link(href="#") Portfolio
+                                    i.fas.fa-angle-down.header__menu-icon
+                                ul.header__dropdown-list 
+                                    li.header__dropdown-item 
+                                        a.header__dropdown-link(href="#") Web Design
+                                    li.header__dropdown-item 
+                                        a.header__dropdown-link(href="#") Wordpress Design
+                                    li.header__dropdown-item 
+                                        a.header__dropdown-link(href="#") Mobile App Development
+                                    li.header__dropdown-item 
+                                        a.header__dropdown-link(href="#") Internet Marketing
+                                    li.header__dropdown-item 
+                                        a.header__dropdown-link(href="#") Social Media Management
+                            li.header__menu-item
+                                a.header__menu-link(href="#") Blog
+                            li.header__menu-item
+                                a.header__menu-link(href="#") Contact Us
+            .slider
+                .slider__wrap.carousel.slide(data-ride="carousel")
+                    .slider__image.carousel-inner
+                        .slider__image-list
+                            .slider__image-item.carousel-item.active
+                                img(src="./assets/images/slider/slider1.png" alt="").slider__image-img
+                            .slider__image-item.carousel-item
+                                img(src="./assets/images/slider/slider1.png" alt="").slider__image-img
+                            .slider__image-item.carousel-item
+                                img(src="./assets/images/slider/slider1.png" alt="").slider__image-img
+                            .slider__image-item.carousel-item
+                                img(src="./assets/images/slider/slider1.png" alt="").slider__image-img
+                            .slider__image-item.carousel-item
+                                img(src="./assets/images/slider/slider1.png" alt="").slider__image-img
+                    .slider__change.carousel-indicators(style="bottom:12px")
+                        span.slider__dot.active(data-target="#carouselExampleIndicators" data-slide-to="0")
+                            i.far.fa-circle.slider__dot-icon
+                        span.slider__dot(data-target="#carouselExampleIndicators" data-slide-to="1")
+                            i.far.fa-circle.slider__dot-icon
+                        span.slider__dot(data-target="#carouselExampleIndicators" data-slide-to="2")
+                            i.far.fa-circle.slider__dot-icon
+                        span.slider__dot(data-target="#carouselExampleIndicators" data-slide-to="3")
+                            i.far.fa-circle.slider__dot-icon
+                        span.slider__dot(data-target="#carouselExampleIndicators" data-slide-to="4")
+                            i.far.fa-circle.slider__dot-icon
+            .about 
+                .about__wrap 
+                    .about__list
+                        .about__item 
+                            .about__header
+                                .about__header-image
+                                    img.about__header-img(src="./assets/images/about/pen.png", alt="")
+                                .about__header-text 
+                                    h3.about__header-title Clean Theme
+                            .about__body
+                                p.about__body-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at iste, ducimus excepturi perferendis quod pariatur, quasi expedita ipsam vitae consectetur blanditiis? Laboriosam deleniti aut sed autem, architecto minus ipsa.
+                            .about__footer
+                                .about__footer-img
+                                    i.about__footer-icon.fas.fa-angle-right
+                                .about__footer-text Read More
+                        .about__item 
+                            .about__header
+                                .about__header-image
+                                    img.about__header-img(src="./assets/images/about/pen.png", alt="")
+                                .about__header-text 
+                                    h3.about__header-title Responsive Design
+                            .about__body
+                                p.about__body-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at iste, ducimus excepturi perferendis quod pariatur, quasi expedita ipsam vitae consectetur blanditiis? Laboriosam deleniti aut sed autem, architecto minus ipsa.
+                            .about__footer
+                                .about__footer-img
+                                    i.about__footer-icon.fas.fa-angle-right
+                                .about__footer-text Read More
+                        .about__item 
+                            .about__header
+                                .about__header-image
+                                    img.about__header-img(src="./assets/images/about/pen.png", alt="")
+                                .about__header-text 
+                                    h3.about__header-title Fully layerd psd
+                            .about__body
+                                p.about__body-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at iste, ducimus excepturi perferendis quod pariatur, quasi expedita ipsam vitae consectetur blanditiis? Laboriosam deleniti aut sed autem, architecto minus ipsa.
+                            .about__footer
+                                .about__footer-img
+                                    i.about__footer-icon.fas.fa-angle-right
+                                .about__footer-text Read More
+                        .about__item 
+                            .about__header
+                                .about__header-image
+                                    img.about__header-img(src="./assets/images/about/pen.png", alt="")
+                                .about__header-text 
+                                    h3.about__header-title Ready for coding
+                            .about__body
+                                p.about__body-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque at iste, ducimus excepturi perferendis quod pariatur, quasi expedita ipsam vitae consectetur blanditiis? Laboriosam deleniti aut sed autem, architecto minus ipsa.
+                            .about__footer
+                                .about__footer-img
+                                    i.about__footer-icon.fas.fa-angle-right
+                                .about__footer-text Read More
+            
+            section.section
+                .section__top
+                    .latest-works
+                        .latest-works__header 
+                            .latest-works__header-left 
+                                img.latest-works__header-img(src="./assets/images/latest-works/mouse.png", alt="")
+                                h3.latest-works__header-text Latest Works
+                            .latest-works__header-right 
+                                button.latest-works__header-btn 
+                                    img.latest-works__header-img-left(src="./assets/images/latest-works/arow-left.png", alt="")
+                                button.latest-works__header-btn 
+                                    img.latest-works__header-img-right(src="./assets/images/latest-works/arow-right.png", alt="")
+                        .latest-works__footer 
+                            .latest-works__footer-list
+                                .latest-works__footer-item 
+                                    img.latest-works__footer-image(src="./assets/images/latest-works/latest-work1.png", alt="")
+                                    .latest-works__footer-item-detail
+                                        a.latest-works__footer-item-link(href="#") 
+                                            img.latest-works__footer-item-view(src="./assets/images/latest-works/view.png", alt="")
+                                        a.latest-works__footer-item-link(href="#") 
+                                            img.latest-works__footer-item-view(src="./assets/images/latest-works/link.png", alt="")
+                                .latest-works__footer-item 
+                                    img.latest-works__footer-image(src="./assets/images/latest-works/latest-work2.png", alt="")
+                                    .latest-works__footer-item-detail
+                                        img.latest-works__footer-item-view(src="./assets/images/latest-works/view.png", alt="")
+                                        img.latest-works__footer-item-view(src="./assets/images/latest-works/link.png", alt="")
+                                .latest-works__footer-item 
+                                    img.latest-works__footer-image(src="./assets/images/latest-works/latest-work3.png", alt="")
+                                    .latest-works__footer-item-detail
+                                        img.latest-works__footer-item-view(src="./assets/images/latest-works/view.png", alt="")
+                                        img.latest-works__footer-item-view(src="./assets/images/latest-works/link.png", alt="")
+                                .latest-works__footer-item 
+                                    img.latest-works__footer-image(src="./assets/images/latest-works/latest-work4.png", alt="")
+                                    .latest-works__footer-item-detail
+                                        img.latest-works__footer-item-view(src="./assets/images/latest-works/view.png", alt="")
+                                        img.latest-works__footer-item-view(src="./assets/images/latest-works/link.png", alt="")
+                .section__mid 
+                    .testimonials
+                        .testimonials__heading
+                            img.testimonials__heading-img(src="./assets/images/section/comments.png", alt="") 
+                            h3.testimonials__heading-text Testimonials
+                        .testimonials__content 
+                            p.testimonials__content-text Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti eum laudantium quisquam rerum saepe doloribus fuga culpa corporis harum quas veniam commodi atque aut aliquid, sapiente quis ducimus veritatis temporibus.
+                        .testimonials__authentication
+                            p.testimonials__authentication-text John Travis, CEO, DomainName.com
+                    .ourclients
+                        .ourclients__heading
+                            img.ourclients__heading-img(src="./assets/images/section/ourclients.png", alt="") 
+                            h3.ourclients__heading-text Our Clients 
+                        .ourclients__partner
+                            img.ourclients__partner-img(src="./assets/images/section/partner.png", alt="")
+                .section__bot
+                    p.section__bot-text This is clean and modern, four column website PSD template. You can code it into a Wordpress website, HTML5 responsive website for your personal or client works. So ahead and download this wonderful PSD template!
+
+                    a(href="#").section__bot-download 
+                        i.fas.fa-download.section__bot-icon 
+                        |Download PSD
+
+            footer.footer
+                .footer-wrap
+                    .footer-top 
+                        .footer-top__col 
+                            h3.footer-top__heading About us 
+                                p.footer-top__heading-text Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores sit modi obcaecati inventore? Ex vel nostrum deleniti dolorem repudiandae! Dignissimos quisquam sint nihil cumque facilis harum fuga itaque aspernatur quia!
+                        .footer-top__col
+                            h3.footer-top__heading Explore
+                                ul.footer-top__list
+                                    li.footer-top__item
+                                        a.footer-top__item-link(href="#") Home
+                                    li.footer-top__item
+                                        a.footer-top__item-link(href="#") About Us 
+                                    li.footer-top__item
+                                        a.footer-top__item-link(href="#") Services
+                                    li.footer-top__item
+                                        a.footer-top__item-link(href="#") Portfolio
+                                    li.footer-top__item
+                                        a.footer-top__item-link(href="#") Blog
+                        .footer-top__col
+                            h3.footer-top__heading Browse
+                                ul.footer-top__list
+                                    li.footer-top__item
+                                        a.footer-top__item-link(href="#") Careers
+                                    li.footer-top__item
+                                        a.footer-top__item-link(href="#") Press & Media
+                                    li.footer-top__item
+                                        a.footer-top__item-link(href="#") Contact Us
+                                    li.footer-top__item
+                                        a.footer-top__item-link(href="#") Term of Service
+                                    li.footer-top__item
+                                        a.footer-top__item-link(href="#") Privacy Policy
+                        .footer-top__col
+                            h3.footer-top__heading Contact Us
+                                .footer-top__company-name BisLite Inc.
+                                .footer-top__company-location Always Street 2650X - 125 - Canada
+                                .footer-top__company-phone Phone: 987-6543-210
+                                .footer-top__company-fax Fax: 987-6543-210
+                        .footer-top__col
+                            h3.footer-top__heading Connect With Us
+                                .footer-top__socials
+                                    .footer-top__socials-top
+                                        a.footer-top__socials-link(href="#") 
+                                            img.footer-top__socials-img(src="./assets/images/footer/fb.png", alt="")
+                                        a.footer-top__socials-link(href="#") 
+                                            img.footer-top__socials-img(src="./assets/images/footer/drib.png", alt="")
+                                        a.footer-top__socials-link(href="#") 
+                                            img.footer-top__socials-img(src="./assets/images/footer/pinter.png", alt="")
+                                    .footer-top__socials-bot
+                                        a.footer-top__socials-link(href="#") 
+                                            img.footer-top__socials-img(src="./assets/images/footer/linked.png", alt="")
+                                        a.footer-top__socials-link(href="#") 
+                                            img.footer-top__socials-img(src="./assets/images/footer/sky.png", alt="")
+                                        a.footer-top__socials-link(href="#") 
+                                            img.footer-top__socials-img(src="./assets/images/footer/share.png", alt="")
+                    .footer-bot 
+                        .footer-bot__text 
+                            .footer-bot__text-policy © Copyright 2021. All rigths reserved.
+                            .footer-bot__text-policy Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        .footer-bot__logo 
+                            a.footer-bot__logo-link(href="index.html")
+                                span.footer-bot__logo-text Bis
+                                span.footer-bot__logo-text2 Lite

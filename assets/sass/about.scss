@@ -1,0 +1,60 @@
+@mixin flexbox() {
+  display: flex;
+  align-items: center;
+  //   justify-content: space-between;
+}
+
+.about {
+  width: 100%;
+  height: 300px;
+  background-color: #e8ebf1;
+  padding: 60px 0;
+  border-bottom: 1px solid #d9d9d9;
+
+  &__wrap {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  &__list {
+    display: flex;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  &__item {
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  &__header {
+    @include flexbox();
+    &-text {
+      margin-left: 20px;
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    &-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &__body {
+    margin-top: 20px;
+    font-size: 1.3rem;
+  }
+  &__footer {
+    display: flex;
+    &-img {
+      transform: translateY(8%);
+      margin-right: 3px;
+    }
+    &-text {
+      font-size: 1.3rem;
+      color: #61bad1;
+    }
+    &-text:hover {
+      cursor: pointer;
+    }
+  }
+}

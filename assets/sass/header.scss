@@ -1,0 +1,117 @@
+$primary-color: #2aacc8;
+$text-color: #000;
+$border-color: #e7e7e7;
+
+@mixin flexbox() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header {
+  height: 120px;
+  background-color: #e8ebf1;
+  text-decoration: none;
+
+  &__wrap {
+    @include flexbox();
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+  }
+  &__logo {
+    text-decoration: none;
+    font-size: 5rem;
+    color: $text-color;
+
+    .logo__text {
+      font-weight: 700;
+      color: $text-color;
+    }
+    .logo__text2 {
+      font-weight: 300;
+      color: $primary-color;
+    }
+  }
+  &__logo:hover {
+    text-decoration: none;
+  }
+  &__menu {
+    &-list {
+      @include flexbox();
+      list-style: none;
+      text-decoration: none;
+    }
+    &-item {
+      position: relative;
+      margin: 0 25px;
+    }
+    &-item--active > a {
+      color: $primary-color;
+    }
+    &-item:nth-child(3),
+    &-item:nth-child(4) {
+      width: 105px;
+      padding: 20px 0;
+      text-align: center;
+    }
+    &-link {
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-decoration: none;
+      color: $text-color;
+      text-transform: uppercase;
+      transition: color 0.3s;
+    }
+    &-link:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+    &-item:nth-child(3):hover,
+    &-item:nth-child(4):hover {
+      color: $primary-color;
+
+      background-color: #fff;
+      //   animation: fadeIn ease-in 0.3s;
+    }
+    &-item:nth-child(3):hover > a,
+    &-item:nth-child(4):hover > a {
+      color: $primary-color;
+    }
+    &-item:nth-child(3):hover .header__dropdown-list,
+    &-item:nth-child(4):hover .header__dropdown-list {
+      border-bottom: 5px solid $primary-color;
+      display: block;
+    }
+    &-icon {
+      margin-left: 10px;
+    }
+  }
+  &__dropdown {
+    &-list {
+      display: none;
+      //   animation: fadeIn ease-in 0.3s;
+      position: absolute;
+      top: 50px;
+      width: 200px;
+      background-color: #fff;
+      list-style: none;
+      padding-left: 20px;
+      z-index: 1;
+    }
+    &-item {
+      padding: 12px 0;
+      text-align: left;
+    }
+    &-link {
+      font-size: 1.3rem;
+      text-decoration: none;
+      color: $text-color;
+    }
+    &-link:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+}

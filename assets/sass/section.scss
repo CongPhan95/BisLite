@@ -1,0 +1,164 @@
+@mixin flexbox() {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0 40px 0;
+
+  &__top {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #dfe1e5;
+  }
+  &__mid {
+    padding: 20px 0 40px 0;
+    @include flexbox();
+  }
+  &__bot {
+    padding: 35px;
+    border: 1px solid #81e4ed;
+    background-color: #e8fcfe;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-text {
+      width: 608px;
+      font-size: 1.6rem;
+    }
+    &-download {
+      padding: 17px;
+      color: #0d0707;
+      background-color: #7adfe9;
+      border: 1px solid #2aacc8;
+      border-radius: 10px;
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-style: normal;
+    }
+    &-download:hover {
+      text-decoration: none;
+      color: #2aacc8;
+    }
+    &-icon {
+      margin-right: 25px;
+      color: #fff;
+    }
+  }
+}
+.latest-works {
+  &__header {
+    @include flexbox();
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dfe1e5;
+
+    &-left {
+      @include flexbox();
+    }
+    &-img {
+      margin-right: 20px;
+    }
+    &-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+      transform: translateY(25%);
+    }
+    &-btn {
+      border: none;
+      background-color: #fff;
+      margin-left: 10px;
+    }
+  }
+  &__footer {
+    margin-top: 20px;
+
+    &-list {
+      @include flexbox();
+    }
+    &-item {
+      position: relative;
+      &-detail {
+        position: absolute;
+        width: 220px;
+        height: 80px;
+        bottom: 0px;
+        background-color: #2aacc8;
+        text-align: center;
+        animation: SideIn linear 0.3s;
+        display: none;
+      }
+      &-view {
+        transform: translateY(25px);
+        margin: 0 1.5rem;
+      }
+    }
+    &-item:hover {
+      cursor: pointer;
+    }
+    &-item:hover &-item-detail {
+      display: block;
+    }
+  }
+}
+.testimonials {
+  width: 425px;
+
+  &__heading {
+    display: flex;
+
+    &-img {
+      margin-right: 20px;
+    }
+    &-text {
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0;
+      transform: translateY(25%);
+    }
+  }
+
+  &__content {
+    margin-top: 20px;
+
+    &-text {
+      font-size: 1.4rem;
+    }
+  }
+  &__authentication {
+    margin-top: 35px;
+    &-text {
+      font-size: 1.4rem;
+      font-weight: 700;
+      font-style: italic;
+    }
+  }
+}
+
+.ourclients__heading {
+  display: flex;
+
+  &-img {
+    margin-right: 20px;
+  }
+}
+
+.ourclients__partner {
+  margin-top: 20px;
+}
+
+@keyframes SideIn {
+  from {
+    opacity: 0;
+    bottom: -40px;
+  }
+  to {
+    opacity: 1;
+    bottom: 0px;
+  }
+}

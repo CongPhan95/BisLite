@@ -1,0 +1,104 @@
+.header {
+  height: 120px;
+  background-color: #e8ebf1;
+  text-decoration: none;
+}
+.header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+}
+.header__logo {
+  text-decoration: none;
+  font-size: 5rem;
+  color: #000;
+}
+.header__logo .logo__text {
+  font-weight: 700;
+  color: #000;
+}
+.header__logo .logo__text2 {
+  font-weight: 300;
+  color: #2aacc8;
+}
+.header__logo:hover {
+  text-decoration: none;
+}
+.header__menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+}
+.header__menu-item {
+  position: relative;
+  margin: 0 25px;
+}
+.header__menu-item--active > a {
+  color: #2aacc8;
+}
+.header__menu-item:nth-child(3),
+.header__menu-item:nth-child(4) {
+  width: 105px;
+  padding: 20px 0;
+  text-align: center;
+}
+.header__menu-link {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.header__menu-link:hover {
+  color: #2aacc8;
+  text-decoration: none;
+}
+.header__menu-item:nth-child(3):hover,
+.header__menu-item:nth-child(4):hover {
+  color: #2aacc8;
+  background-color: #fff;
+}
+.header__menu-item:nth-child(3):hover > a,
+.header__menu-item:nth-child(4):hover > a {
+  color: #2aacc8;
+}
+.header__menu-item:nth-child(3):hover .header__dropdown-list,
+.header__menu-item:nth-child(4):hover .header__dropdown-list {
+  border-bottom: 5px solid #2aacc8;
+  display: block;
+}
+.header__menu-icon {
+  margin-left: 10px;
+}
+.header__dropdown-list {
+  display: none;
+  position: absolute;
+  top: 50px;
+  width: 200px;
+  background-color: #fff;
+  list-style: none;
+  padding-left: 20px;
+  z-index: 1;
+}
+.header__dropdown-item {
+  padding: 12px 0;
+  text-align: left;
+}
+.header__dropdown-link {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #000;
+}
+.header__dropdown-link:hover {
+  color: #2aacc8;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=header.css.map */

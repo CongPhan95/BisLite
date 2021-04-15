@@ -1,0 +1,45 @@
+$primary-color: #81e4ed;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; // Đưa về đơn vị rem
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#app {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1040px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.grid.wide {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.row {
+  // display:flex;
+}
+
+// Animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
